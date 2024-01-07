@@ -8,10 +8,87 @@
     <artifactId>Kata7</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!-- Dependencia para cargar imágenes -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-imaging</artifactId>
+            <version>1.0-alpha3</version> <!-- Usa la versión más reciente -->
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.main>software.ulpgc.kata7.EggBreakingGame</project.main>
+        <project.website>https://dummy-website.com</project.website>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>${project.main}</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <executable>jpackage</executable>
+                    <arguments>
+                        <argument>--input</argument>
+                        <argument>target/</argument>
+                        <argument>--name</argument>
+                        <argument>EggBreaker</argument>
+                        <argument>--main-jar</argument>
+                        <argument>${project.name}-${project.version}.jar</argument>
+                        <argument>--main-class</argument>
+                        <argument>${project.main}</argument>
+                        <argument>--icon</argument>
+                        <argument>icon.ico</argument>
+                        <argument>--type </argument>
+                        <argument>exe</argument>
+                        <argument>--win-menu</argument>
+                        <argument>--win-shortcut-prompt</argument>
+                        <argument>--win-dir-chooser</argument>
+                        <argument>--win-help-url</argument>
+                        <argument>${project.website}</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

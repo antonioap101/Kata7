@@ -1,10 +1,12 @@
 package software.ulpgc.kata7;
 
+import org.apache.commons.imaging.Imaging;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
+
 
 public class EggBreakingGame {
 
@@ -17,11 +19,15 @@ public class EggBreakingGame {
     }
 
     private static void loadImages() {
-        stageIcons.put(25.0, new ImageIcon(Objects.requireNonNull(EggBreakingGame.class.getResource("/stage1.png"))));
-        stageIcons.put(50.0, new ImageIcon(Objects.requireNonNull(EggBreakingGame.class.getResource("/stage2.png"))));
-        stageIcons.put(75.0, new ImageIcon(Objects.requireNonNull(EggBreakingGame.class.getResource("/stage3.png"))));
-        stageIcons.put(99.0, new ImageIcon(Objects.requireNonNull(EggBreakingGame.class.getResource("/stage4.png"))));
-        stageIcons.put(100.0, new ImageIcon(Objects.requireNonNull(EggBreakingGame.class.getResource("/stage5.png"))));
+        try {
+            stageIcons.put(25.0, new ImageIcon(Imaging.getBufferedImage(EggBreakingGame.class.getResource("/stage1.png").openStream())));
+            stageIcons.put(50.0, new ImageIcon(Imaging.getBufferedImage(EggBreakingGame.class.getResource("/stage2.png").openStream())));
+            stageIcons.put(75.0, new ImageIcon(Imaging.getBufferedImage(EggBreakingGame.class.getResource("/stage3.png").openStream())));
+            stageIcons.put(99.0, new ImageIcon(Imaging.getBufferedImage(EggBreakingGame.class.getResource("/stage4.png").openStream())));
+            stageIcons.put(100.0, new ImageIcon(Imaging.getBufferedImage(EggBreakingGame.class.getResource("/stage5.png").openStream())));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private static void createAndShowGUI() {
