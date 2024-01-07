@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd7c2b18-9a75-45d5-be57-771d677e21f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/kata7/EggBreakingGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/stage1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/stage2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/stage3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/stage4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/stage5.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2abzGSaErFDaXZXMDhWSrli2LDg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.EggBreakingGame.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Maven.Kata7 [clean].executor": "Run",
+    "Maven.Kata7 [cleanç].executor": "Run",
+    "Maven.Kata7 [site].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_directory_selection": "C:/Users/Admin/Documents/ULPGC/3er Curso/1er Semestre/IS2/Practicas/Kata7/src/main/java/software/ulpgc",
+    "last_opened_file_path": "C:/Users/Admin/Documents/ULPGC/3er Curso/1er Semestre/IS2/Practicas/Kata7"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\ULPGC\3er Curso\1er Semestre\IS2\Practicas\Kata7" />
+      <recent name="C:\Users\Admin\Documents\ULPGC\3er Curso\1er Semestre\IS2\Practicas\Kata7\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn cleanç" />
+      <command value="mvn clean" />
+      <command value="mvn site" />
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd7c2b18-9a75-45d5-be57-771d677e21f8" name="Changes" comment="" />
+      <created>1704601974957</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704601974957</updated>
+    </task>
+    <servers />
+  </component>
+</project>
